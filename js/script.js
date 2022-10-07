@@ -21,7 +21,7 @@ function scrollPage() {
   if (scrollPos > 100 && !scrollStarted) {
     countUp()
     scrollStarted = true
-  } else if (scrollPos < 0 && scrollStarted) {
+  } else if (scrollPos < 100 && scrollStarted) {
     reset()
     scrollStarted = false
   }
